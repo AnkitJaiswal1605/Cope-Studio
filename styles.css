@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(#00245E, #0F7783);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.background-img {
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -1;
+}
+
+.logo {
+    width: 13rem;
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.legal {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    left: 4rem;
+    bottom: 3rem;
+    text-decoration: underline;
+}
+
+/* .user-details {
+    font-family: 'Inter', sans-serif !important;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.user-details p {
+    margin-bottom: 0.5rem;
+} */
+
+/* #wallet-address, #nft-balance {
+    
+} */
+
+.inner-container {
+    font-family: 'Inria Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 67vh;
+    min-width: 24rem;
+    background-color: rgba(21, 21, 21, 0.76);
+    border-radius: 20px;
+}
+
+.functionality {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    width: 15rem;
+    padding: 0.5rem;
+    border-style: solid;
+    border-width: 3.5px;
+    border-color: white;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.mint-qty {
+    width: 15rem;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    color: white;
+    padding-left: 1rem;
+    font-size: 1rem;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-price {
+    width: 15rem;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    background-color: transparent;
+    border-style: solid;
+    border-right: none;
+    border-left: none;
+    border-color: white;
+    border-width: 3px;
+    caret-color: transparent;
+    color: white;
+    padding-left: 1rem;
+    font-size: 1rem;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enter-qty {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.max-qty {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.enter-qty span {
+    margin-right: 3px;
+}
+
+.add, .subtract {
+    cursor: pointer;
+}
+
+.final-qty {
+    width: 1.4rem;
+    text-align: center;
+    margin-left: 3px;
+}
+
+.mint-qty::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+.mint-qty:focus {
+    outline: none;
+}
+
+#mint {
+    display: none;
+}
+
+.mint-btn {
+    background-color: white;
+    color: #20746F;
+    margin-bottom: 1rem;
+}
+
+.stake-btn {
+    width: 8rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#mob-metamask {
+    display: inline-block;
+    width: 16rem !important;
+}
+
+h1 {
+    color: white;
+    font-size: 3.5rem;
+}
+
+@media (max-width: 650px) {
+    .logo, .legal {
+        left: 1.5rem;
+    }
+    .inner-container {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 650px) {
+    #mob-metamask {
+        display: none;
+    }
+    .small-text {
+        display: none !important;
+    }
+}
+
+.green-text {
+    color: #4dfed4;
+}
+
+.signed-in-section {
+    display: none;
+}
+
+.signed-out-section {
+    display: flex;
+}
+
+@media (max-width: 1200px) {
+    .signed-in-section {
+        flex-direction: column;
+    }
+
+    .signed-out-section {
+        flex-direction: column;
+    }
+}
+
+#signed-out {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+#signed-out-h2 {
+    margin-top: 2rem;
+}
+
+#signed-in {
+    justify-content: center ;
+    align-items: center;
+}
+
+#signed-in-h2 {
+    display: none;
+    margin-top: 2rem;
+}
+
+.signed-in-break {
+    display: none;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.price {
+    font-family: 'Inria Sans', sans-serif;
+    display: none;
+}
+
+
+.unstaked-doges {
+    width: 5rem;
+    margin-right: 1.5rem;
+}
+
+.staked-doges {
+    margin-bottom: 2rem;
+}
+
+.sign-section {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign-up {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.small-text {
+    display: none;
+    justify-content: center;
+    color: white;
+    font-size: 0.8rem;
+    height: 1rem !important;
+    margin-top: 0;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    bottom: 0.7rem;
+}
+
+#thank-you {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    /* line-height: 1.5rem; */
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
